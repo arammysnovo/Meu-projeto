@@ -72,3 +72,78 @@ body {
     transform: scale(1.1);
     transition: 0.5s;
 }
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbd7d7;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sobre div {
+    max-width: 50%;
+}
+
+.sobre img {
+    max-width: 500px;
+    border-radius: 100px;
+}
+
+.sobre h2 {
+    padding-bottom: 12px;
+    font-size: 42px;
+}
+
+.sobre p {
+    font-size: 18px;
+}
+
+.projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-projeto {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos img {
+    width: 25%;
+    margin-right: 0.7%;
+    margin-left: 0.7%;
+    margin-bottom: 0.7%;
+    border-radius: 12px;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+.projetos img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.projetos h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projetos p {
+    margin-bottom: 40px;
+    font-style: italic;
+    font-size: 18px;
+}
