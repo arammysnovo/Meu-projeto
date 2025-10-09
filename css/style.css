@@ -9,12 +9,19 @@ body {
     font-family: "roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav {
     background-color: #0f000f;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .nav-list {
@@ -22,6 +29,11 @@ body {
     align-items: center;
     list-style: none;
     margin-right: 24px;
+}
+
+.nav-list li:hover {
+    transform: scale(1.15);
+    transition: 0.7s;
 }
 
 .nav-list a {
@@ -51,10 +63,20 @@ body {
     font-size: 54px;
 }
 
+.main h1:hover {
+    transform: scale(1.07);
+    transition: 1s;
+}
+
 .main p {
     font-size: 24px;
     color: #1e96fc;
     margin-top: 10px;
+}
+
+.main p:hover {
+    transform: scale(1.05);
+    transition: 0.95s;
 }
 
 .call-in-action {
@@ -62,15 +84,15 @@ body {
     background-color: #fff;
     border: 0;
     padding: 14px;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 12px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 8%;
 }
 
 .call-in-action:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .sobre {
@@ -90,8 +112,13 @@ body {
 }
 
 .sobre img {
-    max-width: 500px;
+    width: 500px;
     border-radius: 100px;
+}
+
+.sobre img:hover {
+    transform: scale(1.04);
+    transition: 0.5s;
 }
 
 .sobre h2 {
@@ -99,8 +126,19 @@ body {
     font-size: 42px;
 }
 
+.sobre h2:hover {
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+
 .sobre p {
     font-size: 18px;
+}
+
+.sobre p:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    color: orangered;
 }
 
 .projetos {
@@ -142,8 +180,52 @@ body {
     margin-top: 20px;
 }
 
+.projetos h2:hover {
+    transform: scale(1.07);
+    transition: 0.7s;
+}
+
 .projetos p {
     margin-bottom: 40px;
     font-style: italic;
     font-size: 18px;
+}
+
+.projetos p:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    color: orangered;
+}
+
+.action {
+    background-color: #0f000f;
+    border: 0;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 18px;
+    margin-top: 18px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.action:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+footer {
+    background-color: #0f000f;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0;
+    display: flex;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
 }
